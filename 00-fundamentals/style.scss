@@ -10,7 +10,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9fbff;
+  background-color: #101820;
+  ;
 }
 
 .ui-form {
@@ -58,4 +59,20 @@ body {
 
 .ui-form {
   overflow: hidden;
+}
+.ball {
+  height: 30vmin; /* Adjust this value if needed */
+  width: 30vmin; /* Make width equal to height for a perfect circle */
+  border-radius: 50%;
+  background: radial-gradient(circle at bottom right, #610a0a, #87521e);
+  animation: slideright 1s linear infinite;
+}
+
+@keyframes slideright {
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(40vw);
+  }
 }

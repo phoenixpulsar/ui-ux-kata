@@ -48,6 +48,24 @@ body {
   border-radius: 0.25rem;
   height: var(--input-height);
   background-color: var(--color);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+
+  &:hover{
+   
+    transform: scale(2);
+    animation: moveup 1s ease-in-out 0s 3;
+  }
+}
+
+@keyframes moveup {
+  from {
+    transform: translateY(0)
+  }
+  to{
+    transform: translateY(50);
+  }
 }
 
 [data-show]:not([data-active]) {
